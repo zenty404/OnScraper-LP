@@ -59,7 +59,7 @@ export function Waitlist() {
 
         {/* Title */}
         <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 text-center tracking-tight">
-          Prenez <Highlighter color="#93C5FD" isView={true}>une longueur d'avance</Highlighter>.
+          Prenez <Highlighter color="#93C5FD" isView={true}>une longueur d'avance.</Highlighter>
         </h2>
 
         {/* Subtitle */}

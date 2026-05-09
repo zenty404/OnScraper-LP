@@ -54,7 +54,7 @@ export function PainPoints() {
         <ScrollReveal>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-              On comprend <Highlighter color="#93C5FD" isView={true}>vos défis</Highlighter>
+              On <Highlighter color="#93C5FD" isView={true}>comprend vos défis</Highlighter>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               En tant que dirigeant d'agence, vous faites face à des défis quotidiens qui vont bien au-delà de la simple technique
@@ -74,7 +74,7 @@ export function PainPoints() {
               <div className="absolute inset-0 bg-[#092B7E]/10 blur-xl rounded-full" />
               <div className="relative bg-white rounded-3xl p-12 md:p-16 shadow-2xl shadow-[#092B7E]/20 border border-gray-200">
                 <h3 className="text-3xl md:text-4xl font-bold text-[#092B7E] mb-6">
-                  Et si vous pouviez enfin vous concentrer sur <Highlighter color="#93C5FD" isView={true}>ce qui compte vraiment</Highlighter> ?
+                  Et si vous pouviez enfin vous concentrer sur <Highlighter color="#93C5FD" isView={true}>ce qui compte vraiment ?</Highlighter>
                 </h3>
                 <p className="text-[#092B7E] text-xl max-w-3xl mx-auto">
                   OnScraper automatise la partie la plus chronophage de votre prospection, vous libérant du temps pour développer votre business et servir vos clients.

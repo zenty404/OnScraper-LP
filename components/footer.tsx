@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const TIMEZONES = [{ city: "Paris", offset: 1 }]; // UTC+1
@@ -41,10 +42,14 @@ export default function Footer() {
           <div className="mb-12 flex flex-col items-start justify-between gap-16 md:mb-24 md:flex-row md:gap-8">
             {/* Left: Logo + Info */}
             <div className="flex max-w-sm flex-col gap-6 md:gap-8">
-              <Link href="/" aria-label="OnScraper — Accueil">
-                <div className="text-3xl font-bold bg-gradient-to-r from-[#092B7E] to-[#092B7E] bg-clip-text text-transparent">
-                  OnScraper
-                </div>
+              <Link href="/" aria-label="Shift Agency — Accueil">
+                <Image
+                  src="/shiftagency.svg"
+                  alt="Shift Agency"
+                  width={180}
+                  height={48}
+                  className="h-12 w-auto"
+                />
               </Link>
 
               <div className="flex flex-col gap-1.5 text-sm font-light leading-relaxed text-gray-600">
@@ -106,10 +111,10 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Grand logo "ONSCRAPER" coupé en bas */}
+        {/* Grand logo "SHIFT AGENCY" coupé en bas */}
         <div className="pointer-events-none flex w-full select-none items-end justify-center overflow-hidden pb-0 leading-none">
           <h2 className="relative translate-y-[35%] whitespace-nowrap font-display text-[13vw] font-black tracking-tighter bg-gradient-to-b from-[#092B7E]/20 to-[#092B7E]/5 bg-clip-text text-transparent md:text-[14vw]">
-            ONSCRAPER
+            SHIFT AGENCY
           </h2>
         </div>
       </footer>
