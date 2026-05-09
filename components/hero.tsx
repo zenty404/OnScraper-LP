@@ -72,7 +72,7 @@ export function Hero() {
                   </div>
                   {/* Arrow */}
                   <svg
-                    className="absolute left-[-20px] top-[88px]"
+                    className="absolute left-[-20px] top-[88px] -z-10"
                     width="54"
                     height="77"
                     viewBox="0 0 54 77"
