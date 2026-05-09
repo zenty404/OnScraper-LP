@@ -82,13 +82,9 @@ export function ProblemSolution() {
 
         {/* CTA */}
         <div className="mt-16 text-center">
-          <div className="inline-block p-1 bg-gradient-to-r from-[#092B7E] to-[#092B7E] rounded-full">
-            <div className="bg-white rounded-full px-8 py-4">
-              <p className="text-lg font-semibold bg-gradient-to-r from-[#092B7E] to-[#092B7E] bg-clip-text text-transparent">
-                Gagnez jusqu'à 20 heures par semaine
-              </p>
-            </div>
-          </div>
+          <button className="px-8 py-4 bg-[#092B7E] text-white rounded-xl font-medium text-lg hover:bg-[#0D3AA1] transition-all duration-200">
+            Gagnez jusqu'à 20 heures par semaine
+          </button>
         </div>
       </div>
     </section>

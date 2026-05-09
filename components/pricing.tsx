@@ -74,7 +74,7 @@ export function Pricing() {
                 </ListItem>
               </List>
 
-              <button className="w-full mt-6 px-4 py-3 bg-gray-100 text-gray-900 rounded-lg font-medium hover:bg-gray-200 transition-colors">
+              <button className="w-full mt-6 px-8 py-4 bg-[#092B7E] text-white rounded-xl font-medium hover:bg-[#0D3AA1] transition-all duration-200">
                 Commencer gratuitement
               </button>
             </Body>
@@ -133,7 +133,7 @@ export function Pricing() {
                 </ListItem>
               </List>
 
-              <button className="w-full mt-6 px-4 py-3 bg-gradient-to-r from-[#092B7E] to-[#092B7E] text-white rounded-lg font-medium hover:from-[#0D3AA1] hover:to-[#0D3AA1] transition-all shadow-lg shadow-blue-500/30">
+              <button className="w-full mt-6 px-8 py-4 bg-[#092B7E] text-white rounded-xl font-medium hover:bg-[#0D3AA1] transition-all duration-200">
                 Choisir Pro
               </button>
             </Body>
@@ -182,7 +182,7 @@ export function Pricing() {
                 </ListItem>
               </List>
 
-              <button className="w-full mt-6 px-4 py-3 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-800 transition-colors">
+              <button className="w-full mt-6 px-8 py-4 bg-[#092B7E] text-white rounded-xl font-medium hover:bg-[#0D3AA1] transition-all duration-200">
                 Contacter les ventes
               </button>
             </Body>

@@ -86,19 +86,16 @@ export function Waitlist() {
           <button
             type="submit"
             disabled={submitted}
-            className={`w-full px-8 py-6 rounded-2xl font-semibold text-white text-lg transition-all duration-200 shadow-2xl flex items-center justify-center gap-3 group ${
+            className={`w-full px-8 py-4 rounded-xl font-medium text-white text-lg transition-all duration-200 ${
               submitted
-                ? "bg-green-500 shadow-green-500/30"
-                : "bg-[#092B7E] hover:bg-[#0D3AA1] shadow-blue-900/30"
+                ? "bg-green-500"
+                : "bg-[#092B7E] hover:bg-[#0D3AA1]"
             }`}
           >
             {submitted ? (
               "✓ Vous êtes inscrit !"
             ) : (
-              <>
-                Rejoindre la liste d'attente
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </>
+              "Rejoindre la liste d'attente"
             )}
           </button>
         </form>
