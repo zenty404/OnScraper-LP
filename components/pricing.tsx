@@ -34,7 +34,7 @@ export function Pricing() {
         {/* Pricing Cards */}
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {/* Free Plan */}
-          <ScrollReveal delay={0.3} direction="left">
+          <ScrollReveal delay={0.1} direction="left">
             <Card>
             <Header>
               <Plan>
@@ -86,7 +86,7 @@ export function Pricing() {
           </ScrollReveal>
 
           {/* Pro Plan - Recommended */}
-          <ScrollReveal delay={0.6}>
+          <ScrollReveal delay={0.15}>
             <Card className="border-blue-500/50 shadow-2xl shadow-blue-500/20 scale-105">
             <Header className="bg-gradient-to-br from-blue-100/80 to-blue-100/80">
               <Plan>
@@ -147,7 +147,7 @@ export function Pricing() {
           </ScrollReveal>
 
           {/* Agency Plan */}
-          <ScrollReveal delay={0.9} direction="right">
+          <ScrollReveal delay={0.2} direction="right">
             <Card>
             <Header>
               <Plan>

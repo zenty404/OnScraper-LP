@@ -63,12 +63,12 @@ export function PainPoints() {
         </ScrollReveal>
 
         {/* Bento Grid */}
-        <ScrollReveal delay={0.3}>
+        <ScrollReveal delay={0.1}>
           <BentoGrid items={painItems} />
         </ScrollReveal>
 
         {/* Transition to solution */}
-        <ScrollReveal delay={0.8}>
+        <ScrollReveal delay={0.2}>
           <div className="text-center mt-16">
             <div className="inline-block relative w-full max-w-5xl">
               <div className="absolute inset-0 bg-[#092B7E]/10 blur-xl rounded-full" />

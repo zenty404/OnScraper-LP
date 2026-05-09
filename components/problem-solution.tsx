@@ -27,7 +27,7 @@ export function ProblemSolution() {
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           {/* Problème - Card style with shadow */}
-          <ScrollReveal delay={0.4} direction="left">
+          <ScrollReveal delay={0.1} direction="left">
             <div className="group relative h-full">
               <div className="absolute inset-0 bg-gradient-to-br from-gray-500/10 to-gray-400/5 rounded-2xl" />
               <div className="relative h-full flex flex-col bg-white/80 backdrop-blur-sm border-2 border-gray-200 rounded-2xl p-8 shadow-lg">
@@ -76,7 +76,7 @@ export function ProblemSolution() {
           </ScrollReveal>
 
           {/* Solution - Card style with shadow */}
-          <ScrollReveal delay={0.8} direction="right">
+          <ScrollReveal delay={0.2} direction="right">
             <div className="group relative h-full">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-cyan-500/5 rounded-2xl" />
               <div className="relative h-full flex flex-col bg-white/80 backdrop-blur-sm border-2 border-blue-200/50 rounded-2xl p-8 shadow-lg">
@@ -126,7 +126,7 @@ export function ProblemSolution() {
         </div>
 
         {/* CTA with arrow */}
-        <ScrollReveal delay={1.2}>
+        <ScrollReveal delay={0.3}>
           <div className="mt-16 text-center">
             <button className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#092B7E] to-[#0D3AA1] text-white rounded-xl font-semibold text-lg shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/40 hover:scale-105 transition-all duration-300 cursor-pointer">
               Gagnez jusqu'à 20 heures par semaine

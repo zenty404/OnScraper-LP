@@ -14,7 +14,7 @@ export function Hero() {
       <ContainerScroll
         titleComponent={
           <div className="relative z-10">
-            <ScrollReveal delay={0.2}>
+            <ScrollReveal delay={0.1}>
               <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold tracking-tight text-gray-900 mb-6">
                 Votre environnement de prospection
                 <br/>
@@ -24,7 +24,7 @@ export function Hero() {
               </h1>
             </ScrollReveal>
 
-            <ScrollReveal delay={0.5}>
+            <ScrollReveal delay={0.2}>
               <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
                 OnScraper automatise votre prospection grâce à nos intégrations IA.
                 <br></br>
@@ -33,7 +33,7 @@ export function Hero() {
             </ScrollReveal>
 
             {/* CTA avec badge */}
-            <ScrollReveal delay={0.8}>
+            <ScrollReveal delay={0.3}>
               <div className="relative flex items-center justify-center gap-8">
                 <button className="px-8 py-4 bg-[#092B7E] text-white rounded-full font-medium text-lg hover:bg-[#0D3AA1] transition-all duration-200 cursor-pointer">
                   Rejoindre la waitlist
