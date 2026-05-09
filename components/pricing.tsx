@@ -87,6 +87,27 @@ export function Pricing() {
 
           {/* Pro Plan - Recommended */}
           <ScrollReveal delay={0.15}>
+            <div className="relative">
+              {/* Badge "Économisez" */}
+              <div className="absolute -top-12 left-1/2 -translate-x-1/2 z-10">
+                <div className="relative">
+                  <div className="text-[#1D1D1E] font-semibold bg-white border border-gray-200 py-2.5 px-5 rounded-[18px] shadow-lg transform rotate-[-4deg] tracking-[-0.48px] whitespace-nowrap">
+                    Économisez 40€/mois
+                  </div>
+                  {/* Small arrow pointing down */}
+                  <svg
+                    className="absolute left-1/2 -translate-x-1/2 top-[38px]"
+                    width="20"
+                    height="25"
+                    viewBox="0 0 20 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M10 0L10 23M10 23L3 16M10 23L17 16" stroke="#1D1D1E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+
             <Card className="border-blue-500/50 shadow-2xl shadow-blue-500/20 scale-105">
             <Header className="bg-gradient-to-br from-blue-100/80 to-blue-100/80">
               <Plan>
@@ -144,6 +165,7 @@ export function Pricing() {
               </button>
             </Body>
           </Card>
+            </div>
           </ScrollReveal>
 
           {/* Agency Plan */}

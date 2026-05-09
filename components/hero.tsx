@@ -32,14 +32,36 @@ export function Hero() {
               </p>
             </ScrollReveal>
 
-            {/* CTA avec badge */}
+            {/* CTA avec badges */}
             <ScrollReveal delay={0.3}>
               <div className="relative flex items-center justify-center gap-8">
                 <button className="px-8 py-4 bg-[#092B7E] text-white rounded-full font-medium text-lg hover:bg-[#0D3AA1] transition-all duration-200 cursor-pointer">
                   Rejoindre la waitlist
                 </button>
 
-              {/* Badge pointing to demo */}
+              {/* Badge "Notre arme secrète" - à gauche opposé du "Créé par" */}
+              <div className="hidden lg:block absolute left-[-175px] top-[-100px]">
+                <div className="relative">
+                  {/* Badge box */}
+                  <div className="text-[#1D1D1E] font-bold bg-white border border-gray-200 py-[24px] px-[40px] rounded-[24px] shadow-lg transform rotate-6 transition-transform duration-100 hover:-rotate-6 tracking-[-0.48px] text-lg">
+                    Notre arme secrète !
+                  </div>
+                  {/* Arrow pointing to demo - symétrique */}
+                  <svg
+                    className="absolute right-[-20px] top-[88px]"
+                    width="54"
+                    height="77"
+                    viewBox="0 0 54 77"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style={{ transform: 'scaleX(-1)' }}
+                  >
+                    <path d="M53.4954 0.904288C53.4425 0.354538 52.954 -0.0482695 52.4043 0.00459099C51.8545 0.0574515 51.4517 0.545963 51.5046 1.09571L53.4954 0.904288ZM0.0852113 71.0961C-0.137875 71.6013 0.0908434 72.1917 0.596067 72.4148L8.82917 76.0502C9.33439 76.2733 9.9248 76.0445 10.1479 75.5393C10.371 75.0341 10.1423 74.4437 9.63703 74.2206L2.31872 70.9891L5.55018 63.6708C5.77327 63.1656 5.54455 62.5752 5.03933 62.3521C4.5341 62.129 3.94369 62.3577 3.72061 62.863L0.0852113 71.0961ZM51.5046 1.09571C52.7395 13.9392 50.9809 27.0288 43.4894 39.0202C35.996 51.0145 22.6964 62.0227 0.63877 70.5675L1.36123 72.4325C23.7036 63.7773 37.404 52.5355 45.1856 40.0798C52.9691 27.6212 54.7605 14.0608 53.4954 0.904288L51.5046 1.09571Z" fill="#1D1D1E"></path>
+                  </svg>
+                </div>
+              </div>
+
+              {/* Badge "Créé par Shift Agency" - pointing to demo */}
               <div className="hidden lg:block absolute right-[-175px] top-[-100px]">
                 <div className="relative">
                   {/* Badge box */}
