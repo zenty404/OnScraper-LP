@@ -13,25 +13,29 @@ import {
   ListItem,
   Separator,
 } from "@/components/ui/pricing-card";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 export function Pricing() {
   return (
     <section className="bg-white py-16 md:py-32">
       <div className="mx-auto max-w-7xl px-6">
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
-            Tarifs transparents
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Choisissez le plan qui correspond à vos besoins
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+              Tarifs transparents
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Choisissez le plan qui correspond à vos besoins
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* Pricing Cards */}
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {/* Free Plan */}
-          <Card>
+          <ScrollReveal delay={0.3} direction="left">
+            <Card>
             <Header>
               <Plan>
                 <PlanName>Free</PlanName>
@@ -79,9 +83,11 @@ export function Pricing() {
               </button>
             </Body>
           </Card>
+          </ScrollReveal>
 
           {/* Pro Plan - Recommended */}
-          <Card className="border-blue-500/50 shadow-2xl shadow-blue-500/20 scale-105">
+          <ScrollReveal delay={0.6}>
+            <Card className="border-blue-500/50 shadow-2xl shadow-blue-500/20 scale-105">
             <Header className="bg-gradient-to-br from-blue-100/80 to-blue-100/80">
               <Plan>
                 <PlanName>Pro</PlanName>
@@ -138,9 +144,11 @@ export function Pricing() {
               </button>
             </Body>
           </Card>
+          </ScrollReveal>
 
           {/* Agency Plan */}
-          <Card>
+          <ScrollReveal delay={0.9} direction="right">
+            <Card>
             <Header>
               <Plan>
                 <PlanName>Agency</PlanName>
@@ -187,6 +195,7 @@ export function Pricing() {
               </button>
             </Body>
           </Card>
+          </ScrollReveal>
         </div>
       </div>
     </section>

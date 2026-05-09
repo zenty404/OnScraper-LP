@@ -1,6 +1,7 @@
 "use client";
 
 import { Clock, X, Check, ArrowRight } from "lucide-react";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 export function ProblemSolution() {
   return (
@@ -13,20 +14,23 @@ export function ProblemSolution() {
 
       <div className="mx-auto max-w-6xl px-6 relative">
         {/* Section header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-            Transformez votre prospection
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            De la prospection manuelle chronophage à l'automatisation intelligente
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+              Transformez votre prospection
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              De la prospection manuelle chronophage à l'automatisation intelligente
+            </p>
+          </div>
+        </ScrollReveal>
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           {/* Problème - Card style with shadow */}
-          <div className="group relative h-full">
-            <div className="absolute inset-0 bg-gradient-to-br from-gray-500/10 to-gray-400/5 rounded-2xl" />
-            <div className="relative h-full flex flex-col bg-white/80 backdrop-blur-sm border-2 border-gray-200 rounded-2xl p-8 shadow-lg">
+          <ScrollReveal delay={0.4} direction="left">
+            <div className="group relative h-full">
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-500/10 to-gray-400/5 rounded-2xl" />
+              <div className="relative h-full flex flex-col bg-white/80 backdrop-blur-sm border-2 border-gray-200 rounded-2xl p-8 shadow-lg">
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 border border-gray-200 rounded-full text-sm font-semibold text-gray-700 mb-6">
                 <X className="w-4 h-4" />
@@ -67,13 +71,15 @@ export function ProblemSolution() {
                   <span className="text-2xl font-bold text-gray-900">20h/semaine</span>
                 </div>
               </div>
+              </div>
             </div>
-          </div>
+          </ScrollReveal>
 
           {/* Solution - Card style with shadow */}
-          <div className="group relative h-full">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-cyan-500/5 rounded-2xl" />
-            <div className="relative h-full flex flex-col bg-white/80 backdrop-blur-sm border-2 border-blue-200/50 rounded-2xl p-8 shadow-lg">
+          <ScrollReveal delay={0.8} direction="right">
+            <div className="group relative h-full">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-cyan-500/5 rounded-2xl" />
+              <div className="relative h-full flex flex-col bg-white/80 backdrop-blur-sm border-2 border-blue-200/50 rounded-2xl p-8 shadow-lg">
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-200 rounded-full text-sm font-semibold text-[#0D3AA1] mb-6">
                 <Check className="w-4 h-4" />
@@ -114,17 +120,20 @@ export function ProblemSolution() {
                   <span className="text-2xl font-bold text-[#092B7E]">20h/semaine</span>
                 </div>
               </div>
+              </div>
             </div>
-          </div>
+          </ScrollReveal>
         </div>
 
         {/* CTA with arrow */}
-        <div className="mt-16 text-center">
-          <button className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#092B7E] to-[#0D3AA1] text-white rounded-xl font-semibold text-lg shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/40 hover:scale-105 transition-all duration-300 cursor-pointer">
-            Gagnez jusqu'à 20 heures par semaine
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
-        </div>
+        <ScrollReveal delay={1.2}>
+          <div className="mt-16 text-center">
+            <button className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#092B7E] to-[#0D3AA1] text-white rounded-xl font-semibold text-lg shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/40 hover:scale-105 transition-all duration-300 cursor-pointer">
+              Gagnez jusqu'à 20 heures par semaine
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </button>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );
