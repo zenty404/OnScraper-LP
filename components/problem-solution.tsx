@@ -48,7 +48,7 @@ export function ProblemSolution() {
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
                 OnScraper by Shift automatise
                 <br />
-                tout le processus
+                tout le processus via <span className="text-[#092B7E]">Shift IA</span>
               </h3>
               <div className="space-y-3 text-gray-600">
                 <p className="flex items-start gap-3">
@@ -60,7 +60,7 @@ export function ProblemSolution() {
                 <p className="flex items-start gap-3">
                   <span className="text-[#092B7E] mt-1">✓</span>
                   <span>
-                    Enrichissement automatique des données et traitement en un clic.
+                    Enrichissement automatique des données via IA et traitement en un clic
                   </span>
                 </p>
                 <p className="flex items-start gap-3">

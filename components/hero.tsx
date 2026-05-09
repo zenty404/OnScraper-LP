@@ -18,7 +18,7 @@ export function Hero() {
               réuni dans un seul outil.
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-              OnScraper by Shift automatise votre prospection.
+              OnScraper by Shift automatise votre prospection grâce à nos intégrations IA.
               <br></br>
               Recherchez, enrichissez et gérez vos prospects qualifiés en un seul endroit.
             </p>
