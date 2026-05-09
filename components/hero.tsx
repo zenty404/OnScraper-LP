@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <div className="relative overflow-hidden bg-white pt-16 md:pt-0">
       {/* Gradient background subtil */}
-      <div className="absolute inset-0 bg-gradient-to-b from-violet-50/50 via-white to-white" />
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-50/50 via-white to-white" />
 
       <ContainerScroll
         titleComponent={
@@ -20,9 +20,9 @@ export function Hero() {
               OnScraper by Shift automatise votre prospection via Google Maps.
               Recherchez, enrichissez et gérez vos prospects qualifiés en un seul endroit.
             </p>
-            <button className="group relative px-8 py-4 bg-violet-600 text-white rounded-full font-medium text-lg hover:bg-violet-700 transition-all duration-200 shadow-lg shadow-violet-500/30 hover:shadow-xl hover:shadow-violet-500/40">
+            <button className="group relative px-8 py-4 bg-[#092B7E] text-white rounded-full font-medium text-lg hover:bg-[#0D3AA1] transition-all duration-200 shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/40">
               <span className="relative z-10">Rejoindre la waitlist</span>
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-violet-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#092B7E] to-[#092B7E] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
             </button>
           </div>
         }

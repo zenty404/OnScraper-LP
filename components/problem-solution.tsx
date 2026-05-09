@@ -40,9 +40,9 @@ export function ProblemSolution() {
 
           {/* Solution */}
           <div className="relative">
-            <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-violet-500/40 to-transparent rounded-full" />
+            <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-blue-500/40 to-transparent rounded-full" />
             <div className="space-y-4">
-              <div className="inline-block px-4 py-2 bg-violet-50 border border-violet-200/50 rounded-full text-sm font-medium text-violet-700">
+              <div className="inline-block px-4 py-2 bg-blue-50 border border-blue-200/50 rounded-full text-sm font-medium text-[#0D3AA1]">
                 La solution
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
@@ -52,25 +52,25 @@ export function ProblemSolution() {
               </h3>
               <div className="space-y-3 text-gray-600">
                 <p className="flex items-start gap-3">
-                  <span className="text-violet-600 mt-1">✓</span>
+                  <span className="text-[#092B7E] mt-1">✓</span>
                   <span>
                     Recherchez des centaines de prospects en quelques secondes
                   </span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-violet-600 mt-1">✓</span>
+                  <span className="text-[#092B7E] mt-1">✓</span>
                   <span>
                     Enrichissement automatique : nom, téléphone, adresse, note
                   </span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-violet-600 mt-1">✓</span>
+                  <span className="text-[#092B7E] mt-1">✓</span>
                   <span>
                     Centralisez tout dans un CRM léger et intuitif
                   </span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-violet-600 mt-1">✓</span>
+                  <span className="text-[#092B7E] mt-1">✓</span>
                   <span>
                     Suivez vos prospects par statut et exportez en un clic
                   </span>
@@ -82,9 +82,9 @@ export function ProblemSolution() {
 
         {/* CTA */}
         <div className="mt-16 text-center">
-          <div className="inline-block p-1 bg-gradient-to-r from-violet-600 to-purple-600 rounded-full">
+          <div className="inline-block p-1 bg-gradient-to-r from-[#092B7E] to-[#092B7E] rounded-full">
             <div className="bg-white rounded-full px-8 py-4">
-              <p className="text-lg font-semibold bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
+              <p className="text-lg font-semibold bg-gradient-to-r from-[#092B7E] to-[#092B7E] bg-clip-text text-transparent">
                 Gagnez jusqu'à 20 heures par semaine
               </p>
             </div>

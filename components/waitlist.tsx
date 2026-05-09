@@ -1,68 +1,107 @@
 "use client";
 
 import { useState } from "react";
+import { ArrowRight } from "lucide-react";
 
 export function Waitlist() {
   const [email, setEmail] = useState("");
+  const [linkedin, setLinkedin] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // TODO: Intégrer avec votre backend/service d'email
-    console.log("Email soumis:", email);
+    console.log("Email soumis:", email, "LinkedIn:", linkedin);
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
       setEmail("");
+      setLinkedin("");
     }, 3000);
   };
 
+  // Avatars avec initiales colorées en bleu Shift
+  const avatars = [
+    { initials: "AB", gradient: "from-[#092B7E] to-[#0D3AA1]" },
+    { initials: "CD", gradient: "from-blue-400 to-blue-500" },
+    { initials: "EF", gradient: "from-blue-500 to-[#092B7E]" },
+    { initials: "GH", gradient: "from-[#092B7E] to-blue-600" },
+    { initials: "IJ", gradient: "from-blue-600 to-[#092B7E]" },
+    { initials: "KL", gradient: "from-[#092B7E] to-blue-400" },
+    { initials: "MN", gradient: "from-blue-400 to-[#0D3AA1]" },
+    { initials: "OP", gradient: "from-[#0D3AA1] to-blue-500" },
+    { initials: "QR", gradient: "from-blue-500 to-blue-600" },
+    { initials: "ST", gradient: "from-blue-600 to-[#092B7E]" },
+  ];
+
   return (
-    <section id="waitlist" className="bg-gradient-to-b from-white to-violet-50/30 py-16 md:py-24">
+    <section id="waitlist" className="bg-white py-16 md:py-32">
       <div className="mx-auto max-w-4xl px-6">
-        <div className="relative overflow-hidden rounded-3xl border border-violet-200/50 bg-white/80 backdrop-blur-xl p-8 md:p-12 shadow-2xl shadow-violet-500/10">
-          {/* Decorative gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-violet-50/50 via-transparent to-purple-50/50 pointer-events-none" />
-
-          <div className="relative z-10 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Soyez parmi les premiers
-            </h2>
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Rejoignez la waitlist et bénéficiez d'un accès anticipé à OnScraper.
-              <br />
-              <span className="text-violet-600 font-medium">
-                Bonus : 3 mois gratuits pour les 100 premiers inscrits
-              </span>
-            </p>
-
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="votre@email.com"
-                required
-                className="flex-1 px-6 py-4 rounded-full border border-violet-200/50 bg-white/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all"
-              />
-              <button
-                type="submit"
-                disabled={submitted}
-                className={`px-8 py-4 rounded-full font-medium text-white transition-all duration-200 shadow-lg whitespace-nowrap ${
-                  submitted
-                    ? "bg-green-500 shadow-green-500/30"
-                    : "bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 shadow-violet-500/30 hover:shadow-xl hover:shadow-violet-500/40"
-                }`}
+        {/* Avatars row */}
+        <div className="flex items-center justify-center mb-12">
+          <div className="flex items-center -space-x-3">
+            {avatars.map((avatar, i) => (
+              <div
+                key={i}
+                className={`flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br ${avatar.gradient} border-2 border-white shadow-lg text-white font-medium text-sm`}
               >
-                {submitted ? "✓ Inscrit !" : "Rejoindre"}
-              </button>
-            </form>
-
-            <p className="text-sm text-gray-500 mt-4">
-              Pas de spam. Vous recevrez uniquement des nouvelles sur le lancement.
-            </p>
+                {avatar.initials}
+              </div>
+            ))}
+            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-2 border-blue-200 shadow-lg text-gray-900 font-bold text-sm ml-2">
+              +322
+            </div>
           </div>
         </div>
+
+        {/* Title */}
+        <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 text-center tracking-tight">
+          Prenez une longueur d'avance.
+        </h2>
+
+        {/* Subtitle */}
+        <p className="text-lg md:text-xl text-gray-600 mb-12 text-center max-w-2xl mx-auto">
+          Rejoignez 322+ dirigeants d'agence sur la liste d'attente pour notre accès anticipé.
+        </p>
+
+        {/* Form */}
+        <form onSubmit={handleSubmit} className="space-y-4 max-w-2xl mx-auto">
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Votre email pro..."
+            required
+            className="w-full px-8 py-6 rounded-2xl bg-gray-50 border-0 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-lg"
+          />
+
+          <input
+            type="url"
+            value={linkedin}
+            onChange={(e) => setLinkedin(e.target.value)}
+            placeholder="URL LinkedIn (Optionnel)"
+            className="w-full px-8 py-6 rounded-2xl bg-gray-50 border-0 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-lg"
+          />
+
+          <button
+            type="submit"
+            disabled={submitted}
+            className={`w-full px-8 py-6 rounded-2xl font-semibold text-white text-lg transition-all duration-200 shadow-2xl flex items-center justify-center gap-3 group ${
+              submitted
+                ? "bg-green-500 shadow-green-500/30"
+                : "bg-[#092B7E] hover:bg-[#0D3AA1] shadow-blue-900/30"
+            }`}
+          >
+            {submitted ? (
+              "✓ Vous êtes inscrit !"
+            ) : (
+              <>
+                Rejoindre la liste d'attente
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </>
+            )}
+          </button>
+        </form>
       </div>
     </section>
   );

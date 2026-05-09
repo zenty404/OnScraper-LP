@@ -74,7 +74,7 @@ export default function Navbar() {
             aria-label="OnScraper — Accueil"
             className="select-none cursor-pointer"
           >
-            <div className="text-2xl font-bold bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
+            <div className="text-2xl font-bold bg-gradient-to-r from-[#092B7E] to-[#092B7E] bg-clip-text text-transparent">
               OnScraper
             </div>
           </Link>
@@ -89,15 +89,15 @@ export default function Navbar() {
             <span
               className={`h-[2px] w-6 rounded-full transition-all duration-300 ${
                 mobileOpen
-                  ? "translate-y-[1px] rotate-45 bg-violet-600"
-                  : "bg-violet-600 -translate-y-1"
+                  ? "translate-y-[1px] rotate-45 bg-[#092B7E]"
+                  : "bg-[#092B7E] -translate-y-1"
               }`}
             />
             <span
               className={`h-[2px] w-6 rounded-full transition-all duration-300 ${
                 mobileOpen
-                  ? "-translate-y-[1px] -rotate-45 bg-violet-600"
-                  : "bg-violet-600 translate-y-1"
+                  ? "-translate-y-[1px] -rotate-45 bg-[#092B7E]"
+                  : "bg-[#092B7E] translate-y-1"
               }`}
             />
           </button>
@@ -117,7 +117,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-3xl font-display font-semibold text-gray-900 cursor-pointer transition-all duration-300 hover:text-violet-600"
+                className="text-3xl font-display font-semibold text-gray-900 cursor-pointer transition-all duration-300 hover:text-[#092B7E]"
                 style={{
                   transitionDelay: mobileOpen ? `${i * 60}ms` : "0ms",
                   opacity: mobileOpen ? 1 : 0,
@@ -130,7 +130,7 @@ export default function Navbar() {
             <Link
               href="#waitlist"
               onClick={() => setMobileOpen(false)}
-              className="mt-4 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-violet-600 to-purple-600 px-8 py-4 text-[15px] font-medium text-white transition-all duration-300 cursor-pointer shadow-lg shadow-violet-500/30"
+              className="mt-4 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#092B7E] to-[#092B7E] px-8 py-4 text-[15px] font-medium text-white transition-all duration-300 cursor-pointer shadow-lg shadow-blue-500/30"
               style={{
                 transitionDelay: mobileOpen ? `${NAV_LINKS.length * 60}ms` : "0ms",
                 opacity: mobileOpen ? 1 : 0,
@@ -151,8 +151,8 @@ export default function Navbar() {
           aria-label="Navigation principale"
           className={`transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] overflow-hidden ${
             contracted
-              ? "bg-white/90 backdrop-blur-xl shadow-lg shadow-violet-500/10"
-              : "bg-white/80 backdrop-blur-xl shadow-md shadow-violet-500/15"
+              ? "bg-white/90 backdrop-blur-xl shadow-lg shadow-blue-500/10"
+              : "bg-white/80 backdrop-blur-xl shadow-md shadow-blue-500/15"
           } ${
             expanded
               ? showFull
@@ -161,7 +161,7 @@ export default function Navbar() {
               : "w-[180px] rounded-full"
           }`}
           style={{
-            border: "1px solid rgba(124, 58, 237, 0.15)",
+            border: "1px solid rgba(9, 43, 126, 0.15)",
           }}
         >
           <div
@@ -176,14 +176,14 @@ export default function Navbar() {
               className="relative select-none shrink-0 cursor-pointer"
             >
               <div
-                className={`text-xl font-bold bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent transition-all duration-500 whitespace-nowrap ${
+                className={`text-xl font-bold bg-gradient-to-r from-[#092B7E] to-[#092B7E] bg-clip-text text-transparent transition-all duration-500 whitespace-nowrap ${
                   showFull ? "opacity-100 scale-100" : "opacity-0 scale-95"
                 }`}
               >
                 OnScraper
               </div>
               <div
-                className={`absolute top-1/2 left-0 -translate-y-1/2 text-lg font-bold bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent transition-all duration-500 ${
+                className={`absolute top-1/2 left-0 -translate-y-1/2 text-lg font-bold bg-gradient-to-r from-[#092B7E] to-[#092B7E] bg-clip-text text-transparent transition-all duration-500 ${
                   !showFull ? "opacity-100 scale-100" : "opacity-0 scale-95"
                 }`}
               >
@@ -203,7 +203,7 @@ export default function Navbar() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="relative text-[13px] font-medium text-gray-600 transition-colors duration-200 hover:text-violet-600 cursor-pointer whitespace-nowrap after:absolute after:-bottom-1 after:left-0 after:h-[1.5px] after:w-0 after:bg-violet-600 after:transition-all after:duration-300 hover:after:w-full"
+                    className="relative text-[13px] font-medium text-gray-600 transition-colors duration-200 hover:text-[#092B7E] cursor-pointer whitespace-nowrap after:absolute after:-bottom-1 after:left-0 after:h-[1.5px] after:w-0 after:bg-[#092B7E] after:transition-all after:duration-300 hover:after:w-full"
                   >
                     {link.label}
                   </Link>
@@ -221,7 +221,7 @@ export default function Navbar() {
             >
               <Link
                 href="#waitlist"
-                className="inline-flex items-center rounded-[8px] bg-violet-50 px-4 py-1.5 text-[12px] font-medium text-violet-700 transition-all duration-200 hover:bg-violet-100 cursor-pointer whitespace-nowrap"
+                className="inline-flex items-center rounded-[8px] bg-blue-50 px-4 py-1.5 text-[12px] font-medium text-[#0D3AA1] transition-all duration-200 hover:bg-blue-100 cursor-pointer whitespace-nowrap"
               >
                 Waitlist
               </Link>
@@ -230,7 +230,7 @@ export default function Navbar() {
             {/* CTA */}
             <Link
               href="#waitlist"
-              className={`inline-flex items-center bg-gradient-to-r from-violet-600 to-purple-600 font-medium text-white transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] shrink-0 cursor-pointer whitespace-nowrap shadow-lg shadow-violet-500/30 hover:shadow-xl hover:shadow-violet-500/40 ${
+              className={`inline-flex items-center bg-gradient-to-r from-[#092B7E] to-[#092B7E] font-medium text-white transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] shrink-0 cursor-pointer whitespace-nowrap shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/40 ${
                 showFull
                   ? "rounded-full px-5 py-2 text-[13px]"
                   : "rounded-full px-4 py-1.5 text-[12px]"

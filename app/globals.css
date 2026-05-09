@@ -8,8 +8,8 @@
   --muted: #f3f4f6;
   --muted-foreground: #6b7280;
   --border: #e5e7eb;
-  --violet-primary: #7c3aed;
-  --violet-light: #8b5cf6;
+  --blue-primary: #092B7E;
+  --blue-light: #0D3AA1;
 }
 
 @theme inline {
@@ -41,9 +41,9 @@ body {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(124, 58, 237, 0.1);
+  border: 1px solid rgba(9, 43, 126, 0.1);
 }
 
 .glass-border {
-  border: 1px solid rgba(124, 58, 237, 0.2);
+  border: 1px solid rgba(9, 43, 126, 0.2);
 }

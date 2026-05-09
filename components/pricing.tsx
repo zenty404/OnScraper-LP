@@ -44,15 +44,15 @@ export function Pricing() {
             <Body>
               <List>
                 <ListItem>
-                  <Check className="size-4 text-violet-600 shrink-0" />
+                  <Check className="size-4 text-[#092B7E] shrink-0" />
                   <span>50 recherches/mois</span>
                 </ListItem>
                 <ListItem>
-                  <Check className="size-4 text-violet-600 shrink-0" />
+                  <Check className="size-4 text-[#092B7E] shrink-0" />
                   <span>Données basiques</span>
                 </ListItem>
                 <ListItem>
-                  <Check className="size-4 text-violet-600 shrink-0" />
+                  <Check className="size-4 text-[#092B7E] shrink-0" />
                   <span>Export CSV</span>
                 </ListItem>
               </List>
@@ -81,8 +81,8 @@ export function Pricing() {
           </Card>
 
           {/* Pro Plan - Recommended */}
-          <Card className="border-violet-500/50 shadow-2xl shadow-violet-500/20 scale-105">
-            <Header className="bg-gradient-to-br from-violet-100/80 to-purple-100/80">
+          <Card className="border-blue-500/50 shadow-2xl shadow-blue-500/20 scale-105">
+            <Header className="bg-gradient-to-br from-blue-100/80 to-blue-100/80">
               <Plan>
                 <PlanName>Pro</PlanName>
                 <Badge>Populaire</Badge>
@@ -95,27 +95,27 @@ export function Pricing() {
             <Body>
               <List>
                 <ListItem>
-                  <Check className="size-4 text-violet-600 shrink-0" />
+                  <Check className="size-4 text-[#092B7E] shrink-0" />
                   <span>Recherches illimitées</span>
                 </ListItem>
                 <ListItem>
-                  <Check className="size-4 text-violet-600 shrink-0" />
+                  <Check className="size-4 text-[#092B7E] shrink-0" />
                   <span>Enrichissement complet</span>
                 </ListItem>
                 <ListItem>
-                  <Check className="size-4 text-violet-600 shrink-0" />
+                  <Check className="size-4 text-[#092B7E] shrink-0" />
                   <span>CRM avec statuts</span>
                 </ListItem>
                 <ListItem>
-                  <Check className="size-4 text-violet-600 shrink-0" />
+                  <Check className="size-4 text-[#092B7E] shrink-0" />
                   <span>Listes personnalisées</span>
                 </ListItem>
                 <ListItem>
-                  <Check className="size-4 text-violet-600 shrink-0" />
+                  <Check className="size-4 text-[#092B7E] shrink-0" />
                   <span>Export CSV illimité</span>
                 </ListItem>
                 <ListItem>
-                  <Check className="size-4 text-violet-600 shrink-0" />
+                  <Check className="size-4 text-[#092B7E] shrink-0" />
                   <span>Support prioritaire</span>
                 </ListItem>
               </List>
@@ -133,7 +133,7 @@ export function Pricing() {
                 </ListItem>
               </List>
 
-              <button className="w-full mt-6 px-4 py-3 bg-gradient-to-r from-violet-600 to-purple-600 text-white rounded-lg font-medium hover:from-violet-700 hover:to-purple-700 transition-all shadow-lg shadow-violet-500/30">
+              <button className="w-full mt-6 px-4 py-3 bg-gradient-to-r from-[#092B7E] to-[#092B7E] text-white rounded-lg font-medium hover:from-[#0D3AA1] hover:to-[#0D3AA1] transition-all shadow-lg shadow-blue-500/30">
                 Choisir Pro
               </button>
             </Body>
@@ -153,31 +153,31 @@ export function Pricing() {
             <Body>
               <List>
                 <ListItem>
-                  <Check className="size-4 text-violet-600 shrink-0" />
+                  <Check className="size-4 text-[#092B7E] shrink-0" />
                   <span>Tout de Pro, plus :</span>
                 </ListItem>
                 <ListItem>
-                  <Check className="size-4 text-violet-600 shrink-0" />
+                  <Check className="size-4 text-[#092B7E] shrink-0" />
                   <span>Jusqu'à 10 utilisateurs</span>
                 </ListItem>
                 <ListItem>
-                  <Check className="size-4 text-violet-600 shrink-0" />
+                  <Check className="size-4 text-[#092B7E] shrink-0" />
                   <span>API complète</span>
                 </ListItem>
                 <ListItem>
-                  <Check className="size-4 text-violet-600 shrink-0" />
+                  <Check className="size-4 text-[#092B7E] shrink-0" />
                   <span>Webhooks</span>
                 </ListItem>
                 <ListItem>
-                  <Check className="size-4 text-violet-600 shrink-0" />
+                  <Check className="size-4 text-[#092B7E] shrink-0" />
                   <span>Marque blanche</span>
                 </ListItem>
                 <ListItem>
-                  <Check className="size-4 text-violet-600 shrink-0" />
+                  <Check className="size-4 text-[#092B7E] shrink-0" />
                   <span>Support dédié</span>
                 </ListItem>
                 <ListItem>
-                  <Check className="size-4 text-violet-600 shrink-0" />
+                  <Check className="size-4 text-[#092B7E] shrink-0" />
                   <span>Onboarding personnalisé</span>
                 </ListItem>
               </List>

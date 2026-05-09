@@ -32,9 +32,9 @@ export default function Footer() {
   }, []);
 
   return (
-    <div className="rounded-t-[3rem] bg-gradient-to-b from-violet-50/30 to-white">
+    <div className="rounded-t-[3rem] bg-gradient-to-b from-blue-50/30 to-white">
       <footer
-        className="relative w-full overflow-hidden rounded-t-[3rem] bg-white/80 backdrop-blur-xl border-t border-violet-200/50 pb-0 pt-24 text-gray-900"
+        className="relative w-full overflow-hidden rounded-t-[3rem] bg-white/80 backdrop-blur-xl border-t border-blue-200/50 pb-0 pt-24 text-gray-900"
         aria-label="Pied de page"
       >
         <div className="mx-auto w-full max-w-7xl overflow-hidden px-6 md:px-12">
@@ -42,7 +42,7 @@ export default function Footer() {
             {/* Left: Logo + Info */}
             <div className="flex max-w-sm flex-col gap-6 md:gap-8">
               <Link href="/" aria-label="OnScraper — Accueil">
-                <div className="text-3xl font-bold bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
+                <div className="text-3xl font-bold bg-gradient-to-r from-[#092B7E] to-[#092B7E] bg-clip-text text-transparent">
                   OnScraper
                 </div>
               </Link>
@@ -51,7 +51,7 @@ export default function Footer() {
                 <p>Paris, France</p>
                 <a
                   href="mailto:contact@onscraper.com"
-                  className="mt-2 text-gray-900 transition-colors hover:text-violet-600"
+                  className="mt-2 text-gray-900 transition-colors hover:text-[#092B7E]"
                 >
                   contact@onscraper.com
                 </a>
@@ -74,7 +74,7 @@ export default function Footer() {
                     <div className="font-sans text-2xl font-normal tabular-nums tracking-tight text-gray-900 md:text-3xl">
                       {times[i] || "--:--"}
                     </div>
-                    <div className="text-[10px] font-bold uppercase tracking-widest text-violet-600 md:text-xs">
+                    <div className="text-[10px] font-bold uppercase tracking-widest text-[#092B7E] md:text-xs">
                       {tz.city}
                     </div>
                   </div>
@@ -85,19 +85,19 @@ export default function Footer() {
               <div className="flex flex-col gap-3 text-xs font-medium text-gray-600 md:items-end md:text-sm">
                 <Link
                   href="/mentions-legales"
-                  className="w-fit transition-colors hover:text-violet-600"
+                  className="w-fit transition-colors hover:text-[#092B7E]"
                 >
                   Mentions Légales
                 </Link>
                 <Link
                   href="/cgv"
-                  className="w-fit transition-colors hover:text-violet-600"
+                  className="w-fit transition-colors hover:text-[#092B7E]"
                 >
                   CGV
                 </Link>
                 <Link
                   href="/politique-confidentialite"
-                  className="w-fit transition-colors hover:text-violet-600"
+                  className="w-fit transition-colors hover:text-[#092B7E]"
                 >
                   Confidentialité &amp; RGPD
                 </Link>
@@ -108,7 +108,7 @@ export default function Footer() {
 
         {/* Grand logo "ONSCRAPER" coupé en bas */}
         <div className="pointer-events-none flex w-full select-none items-end justify-center overflow-hidden pb-0 leading-none">
-          <h2 className="relative translate-y-[35%] whitespace-nowrap font-display text-[13vw] font-black tracking-tighter bg-gradient-to-b from-violet-600/20 to-violet-600/5 bg-clip-text text-transparent md:text-[14vw]">
+          <h2 className="relative translate-y-[35%] whitespace-nowrap font-display text-[13vw] font-black tracking-tighter bg-gradient-to-b from-[#092B7E]/20 to-[#092B7E]/5 bg-clip-text text-transparent md:text-[14vw]">
             ONSCRAPER
           </h2>
         </div>

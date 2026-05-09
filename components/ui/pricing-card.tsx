@@ -7,7 +7,7 @@ function Card({ className, ...props }: React.ComponentProps<"div">) {
       className={cn(
         "bg-white/80 relative w-full max-w-xs rounded-xl backdrop-blur-xl",
         "p-1.5 shadow-xl",
-        "border border-violet-200/50",
+        "border border-blue-200/50",
         className
       )}
       {...props}
@@ -26,7 +26,7 @@ function Header({
   return (
     <div
       className={cn(
-        "bg-violet-50/80 relative mb-4 rounded-xl border border-violet-200/50 p-4",
+        "bg-blue-50/80 relative mb-4 rounded-xl border border-blue-200/50 p-4",
         className
       )}
       {...props}
@@ -38,7 +38,7 @@ function Header({
           className="absolute inset-x-0 top-0 h-48 rounded-[inherit]"
           style={{
             background:
-              "linear-gradient(180deg, rgba(124,58,237,0.07) 0%, rgba(124,58,237,0.03) 40%, rgba(0,0,0,0) 100%)",
+              "linear-gradient(180deg, rgba(9,43,126,0.07) 0%, rgba(9,43,126,0.03) 40%, rgba(0,0,0,0) 100%)",
           }}
         />
       )}
@@ -78,7 +78,7 @@ function Badge({ className, ...props }: React.ComponentProps<"span">) {
   return (
     <span
       className={cn(
-        "border-violet-500/30 text-violet-700 bg-violet-100/50 rounded-full border px-2 py-0.5 text-xs font-medium",
+        "border-blue-500/30 text-[#0D3AA1] bg-blue-100/50 rounded-full border px-2 py-0.5 text-xs font-medium",
         className
       )}
       {...props}
@@ -158,9 +158,9 @@ function Separator({
       )}
       {...props}
     >
-      <span className="bg-violet-200/40 h-[1px] flex-1" />
+      <span className="bg-blue-200/40 h-[1px] flex-1" />
       <span className="text-gray-500 shrink-0">{children}</span>
-      <span className="bg-violet-200/40 h-[1px] flex-1" />
+      <span className="bg-blue-200/40 h-[1px] flex-1" />
     </div>
   );
 }
