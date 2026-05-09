@@ -5,7 +5,7 @@ import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 export function ProblemSolution() {
   return (
-    <section className="relative bg-white py-16 md:py-32 overflow-hidden">
+    <section className="relative bg-white py-6 md:py-12 overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-gray-500/5 rounded-full blur-3xl" />
