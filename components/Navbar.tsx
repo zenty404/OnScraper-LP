@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { NAV_LINKS } from "@/lib/constants";
 
 /* ═══════════════════════════════════════════════════════════
@@ -74,9 +75,13 @@ export default function Navbar() {
             aria-label="OnScraper — Accueil"
             className="select-none cursor-pointer"
           >
-            <div className="text-2xl font-bold bg-gradient-to-r from-[#092B7E] to-[#092B7E] bg-clip-text text-transparent">
-              OnScraper
-            </div>
+            <Image
+              src="/shift_logo.svg"
+              alt="Shift Agency"
+              width={60}
+              height={60}
+              className="h-15 w-15"
+            />
           </Link>
 
           {/* Burger */}
@@ -105,7 +110,7 @@ export default function Navbar() {
 
         {/* Mobile fullscreen menu */}
         <div
-          className={`fixed inset-0 bg-white/95 backdrop-blur-xl transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+          className={`fixed inset-0 bg-white transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
             mobileOpen
               ? "opacity-100 pointer-events-auto"
               : "opacity-0 pointer-events-none"
@@ -151,8 +156,8 @@ export default function Navbar() {
           aria-label="Navigation principale"
           className={`transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] overflow-hidden ${
             contracted
-              ? "bg-white/90 backdrop-blur-xl shadow-lg shadow-blue-500/10"
-              : "bg-white/80 backdrop-blur-xl shadow-md shadow-blue-500/15"
+              ? "bg-white shadow-lg shadow-blue-500/10"
+              : "bg-white shadow-md shadow-blue-500/15"
           } ${
             expanded
               ? showFull
@@ -175,19 +180,33 @@ export default function Navbar() {
               aria-label="OnScraper — Accueil"
               className="relative select-none shrink-0 cursor-pointer"
             >
+              {/* Logo déplié - shiftagency.svg */}
               <div
-                className={`text-xl font-bold bg-gradient-to-r from-[#092B7E] to-[#092B7E] bg-clip-text text-transparent transition-all duration-500 whitespace-nowrap ${
+                className={`transition-all duration-500 ${
                   showFull ? "opacity-100 scale-100" : "opacity-0 scale-95"
                 }`}
               >
-                OnScraper
+                <Image
+                  src="/shiftagency.svg"
+                  alt="Shift Agency"
+                  width={180}
+                  height={48}
+                  className="h-12 w-auto"
+                />
               </div>
+              {/* Logo contracté - shift_logo.svg */}
               <div
-                className={`absolute top-1/2 left-0 -translate-y-1/2 text-lg font-bold bg-gradient-to-r from-[#092B7E] to-[#092B7E] bg-clip-text text-transparent transition-all duration-500 ${
+                className={`absolute top-1/2 left-0 -translate-y-1/2 transition-all duration-500 ${
                   !showFull ? "opacity-100 scale-100" : "opacity-0 scale-95"
                 }`}
               >
-                OS
+                <Image
+                  src="/shift_logo.svg"
+                  alt="Shift Agency"
+                  width={72}
+                  height={72}
+                  className="h-16 w-16"
+                />
               </div>
             </Link>
 
@@ -211,7 +230,7 @@ export default function Navbar() {
               ))}
             </ul>
 
-            {/* "Waitlist" (contracted state) */}
+            {/* "Shift" (contracted state) */}
             <div
               className={`flex absolute left-1/2 -translate-x-1/2 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
                 !showFull
@@ -220,10 +239,12 @@ export default function Navbar() {
               }`}
             >
               <Link
-                href="#waitlist"
+                href="https://shiftagency-siteweb.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center rounded-[8px] bg-blue-50 px-4 py-1.5 text-[12px] font-medium text-[#0D3AA1] transition-all duration-200 hover:bg-blue-100 cursor-pointer whitespace-nowrap"
               >
-                Waitlist
+                Shift
               </Link>
             </div>
 
