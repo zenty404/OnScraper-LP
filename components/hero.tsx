@@ -1,5 +1,6 @@
 "use client";
 import { ContainerScroll } from "./container-scroll";
+import { DemoAnimation } from "./demo-animation";
 import Image from "next/image";
 
 export function Hero() {
@@ -28,12 +29,7 @@ export function Hero() {
           </div>
         }
       >
-        <div className="relative w-full h-full bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
-          <div className="text-center text-gray-400">
-            <p className="text-sm">Interface OnScraper</p>
-            <p className="text-xs mt-2">Screenshot à venir</p>
-          </div>
-        </div>
+        <DemoAnimation />
       </ContainerScroll>
     </div>
   );
