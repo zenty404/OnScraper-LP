@@ -5,7 +5,7 @@ import { MapPin, Database, Users, Search, Phone, Star, TrendingUp } from "lucide
 
 export function Features() {
   return (
-    <section className="bg-gradient-to-b from-white to-blue-50/30 py-16 md:py-32">
+    <section className="bg-gray-50 py-16 md:py-32">
       <div className="mx-auto max-w-5xl px-6">
         {/* Section Title */}
         <div className="text-center mb-16">

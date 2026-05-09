@@ -40,7 +40,7 @@ export function PainPoints() {
   ];
 
   return (
-    <section className="relative bg-gradient-to-b from-white via-gray-50/50 to-white py-16 md:py-32 overflow-hidden">
+    <section className="relative bg-gray-50 py-16 md:py-32 overflow-hidden">
       {/* Background decorative */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl" />
