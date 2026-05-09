@@ -47,12 +47,25 @@ export function DemoAnimation() {
             </div>
           </div>
 
+          {/* Filter Badge */}
+          <div className="filter-badge flex items-center justify-between mb-4 opacity-0">
+            <div className="flex items-center gap-2">
+              <div className="px-4 py-2 bg-[#092B7E] text-white rounded-lg font-medium text-sm shadow-md flex items-center gap-2 border border-[#0D3AA1]">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+                </svg>
+                Filtre : Sans site web uniquement
+              </div>
+              <span className="text-sm text-gray-600">→ Prospects qualifiés</span>
+            </div>
+          </div>
+
           {/* Loading indicator */}
           <div className="loading-dots flex items-center gap-2 mb-4 opacity-0">
             <div className="w-2 h-2 bg-[#092B7E] rounded-full animate-bounce" style={{ animationDelay: "0ms" }}></div>
             <div className="w-2 h-2 bg-[#092B7E] rounded-full animate-bounce" style={{ animationDelay: "150ms" }}></div>
             <div className="w-2 h-2 bg-[#092B7E] rounded-full animate-bounce" style={{ animationDelay: "300ms" }}></div>
-            <span className="text-sm text-gray-600 ml-2">Recherche en cours...</span>
+            <span className="text-sm text-gray-600 ml-2">Filtrage des prospects sans site...</span>
           </div>
 
           {/* Results */}
@@ -66,25 +79,37 @@ export function DemoAnimation() {
             ].map((result, i) => (
               <div
                 key={i}
-                className="result-card bg-white rounded-lg p-4 shadow-md border border-gray-100 opacity-0"
+                className="result-card bg-white rounded-lg p-4 shadow-md border-l-4 border-l-[#092B7E] border-r border-t border-b border-gray-200 opacity-0"
                 style={{ animationDelay: result.delay }}
               >
-                <div className="flex items-start justify-between">
+                <div className="flex items-start gap-3">
+                  {/* Badge SANS SITE sobre */}
+                  <div className="shrink-0">
+                    <div className="px-3 py-1.5 bg-gray-100 text-gray-900 text-xs font-semibold rounded border-2 border-gray-300 flex items-center gap-1.5">
+                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z" clipRule="evenodd" />
+                      </svg>
+                      Sans site
+                    </div>
+                  </div>
+
                   <div className="flex-1">
-                    <h3 className="font-semibold text-gray-900 mb-1">{result.name}</h3>
+                    <div className="flex items-center gap-2 mb-2">
+                      <h3 className="font-semibold text-gray-900">{result.name}</h3>
+                      <span className="px-2 py-0.5 bg-blue-50 text-[#092B7E] text-xs font-medium rounded border border-blue-200">
+                        Qualifié
+                      </span>
+                    </div>
                     <div className="flex items-center gap-4 text-sm text-gray-600">
                       <div className="flex items-center gap-1">
                         <Phone className="w-4 h-4 text-[#092B7E]" />
-                        <span>{result.phone}</span>
+                        <span className="font-medium">{result.phone}</span>
                       </div>
                       <div className="flex items-center gap-1">
                         <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                        <span>{result.rating}</span>
+                        <span className="font-medium">{result.rating}</span>
                       </div>
                     </div>
-                  </div>
-                  <div className="px-3 py-1 bg-red-50 text-red-700 text-xs font-medium rounded-full">
-                    Pas de site
                   </div>
                 </div>
               </div>
@@ -327,9 +352,14 @@ export function DemoAnimation() {
           animation-delay: 2s;
         }
 
+        .filter-badge {
+          animation: slideDown 0.5s ease-out forwards;
+          animation-delay: 2s;
+        }
+
         .loading-dots {
           animation: slideDown 0.5s ease-out forwards;
-          animation-delay: 2.5s;
+          animation-delay: 2.7s;
         }
 
         .result-card {
