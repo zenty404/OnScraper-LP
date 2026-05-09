@@ -2,6 +2,7 @@
 
 import { DollarSign, UserX, Clock, AlertTriangle } from "lucide-react";
 import { BentoGrid, type BentoItem } from "@/components/ui/bento-grid";
+import { Highlighter } from "@/components/ui/highlighter";
 
 export function PainPoints() {
   const painItems: BentoItem[] = [
@@ -63,29 +64,15 @@ export function PainPoints() {
 
         {/* Transition to solution */}
         <div className="text-center mt-16">
-          <div className="inline-block relative">
+          <div className="inline-block relative w-full max-w-5xl">
             <div className="absolute inset-0 bg-[#092B7E]/10 blur-xl rounded-full" />
-            <div className="relative bg-gradient-to-r from-[#092B7E] to-[#0D3AA1] rounded-2xl p-8 md:p-12 shadow-2xl shadow-[#092B7E]/20">
-              <h3 className="text-2xl md:text-2xl font-bold text-white mb-4">
-                Et si vous pouviez enfin vous concentrer sur ce qui compte vraiment ?
+            <div className="relative bg-white rounded-3xl p-12 md:p-16 shadow-2xl shadow-[#092B7E]/20 border border-gray-200">
+              <h3 className="text-3xl md:text-4xl font-bold text-[#092B7E] mb-6">
+                Et si vous pouviez enfin vous concentrer sur <Highlighter color="#93C5FD" isView={true}>ce qui compte vraiment</Highlighter> ?
               </h3>
-              <p className="text-blue-100 text-lg max-w-2xl mx-auto mb-6">
+              <p className="text-[#092B7E] text-xl max-w-3xl mx-auto">
                 OnScraper automatise la partie la plus chronophage de votre prospection, vous libérant du temps pour développer votre business et servir vos clients.
               </p>
-              <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-blue-100">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                  <span>Simple et intuitif</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                  <span>Résultats immédiats</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                  <span>IA embarquée </span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
