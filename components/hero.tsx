@@ -1,6 +1,7 @@
 "use client";
 import { ContainerScroll } from "./container-scroll";
 import { DemoAnimation } from "./demo-animation";
+import { Highlighter } from "./ui/highlighter";
 import Image from "next/image";
 
 export function Hero() {
@@ -15,7 +16,9 @@ export function Hero() {
             <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold tracking-tight text-gray-900 mb-6">
               Votre environnement de prospection
               <br/>
-              réuni dans un seul outil.
+              <Highlighter color="#93C5FD" isView={true}>
+                réuni dans un seul outil.
+              </Highlighter>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
               OnScraper automatise votre prospection grâce à nos intégrations IA.
