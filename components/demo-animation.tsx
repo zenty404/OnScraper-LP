@@ -294,9 +294,9 @@ export function DemoAnimation() {
           <button
             key={demo.id}
             onClick={() => setActiveDemo(index)}
-            className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-pointer ${
+            className={`px-6 py-2 rounded-full text-sm font-medium cursor-pointer transition-all duration-500 ease-out ${
               activeDemo === index
-                ? "bg-[#092B7E] text-white shadow-md"
+                ? "bg-[#092B7E] text-white shadow-md scale-105"
                 : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"
             }`}
           >
