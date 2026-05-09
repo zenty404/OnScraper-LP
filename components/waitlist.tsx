@@ -37,8 +37,10 @@ export function Waitlist() {
   return (
     <section id="waitlist" className="bg-white py-16 md:py-32">
       <div className="mx-auto max-w-4xl px-6">
-        {/* Avatars row */}
-        <div className="flex items-center justify-center mb-12">
+        {/* Card container with border */}
+        <div className="border-2 border-gray-200 rounded-3xl p-8 md:p-12 shadow-lg bg-gradient-to-b from-white to-gray-50/30">
+          {/* Avatars row */}
+          <div className="flex items-center justify-center mb-12">
           <div className="flex items-center -space-x-3">
             {avatars.map((avatar, i) => (
               <div
@@ -99,6 +101,7 @@ export function Waitlist() {
             )}
           </button>
         </form>
+        </div>
       </div>
     </section>
   );
