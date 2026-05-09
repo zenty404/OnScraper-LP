@@ -28,11 +28,6 @@ export function Waitlist() {
     { initials: "EF", gradient: "from-blue-500 to-[#092B7E]" },
     { initials: "GH", gradient: "from-[#092B7E] to-blue-600" },
     { initials: "IJ", gradient: "from-blue-600 to-[#092B7E]" },
-    { initials: "KL", gradient: "from-[#092B7E] to-blue-400" },
-    { initials: "MN", gradient: "from-blue-400 to-[#0D3AA1]" },
-    { initials: "OP", gradient: "from-[#0D3AA1] to-blue-500" },
-    { initials: "QR", gradient: "from-blue-500 to-blue-600" },
-    { initials: "ST", gradient: "from-blue-600 to-[#092B7E]" },
   ];
 
   return (
@@ -52,7 +47,7 @@ export function Waitlist() {
               </div>
             ))}
             <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-2 border-blue-200 shadow-lg text-gray-900 font-bold text-sm ml-2">
-              +322
+              +50
             </div>
           </div>
         </div>
@@ -64,7 +59,7 @@ export function Waitlist() {
 
         {/* Subtitle */}
         <p className="text-lg md:text-xl text-gray-600 mb-12 text-center max-w-2xl mx-auto">
-          Rejoignez 322+ dirigeants d'agence sur la liste d'attente pour notre accès anticipé.
+          Rejoignez +50 freelances et dirigeants d'agence sur la liste d'attente pour notre accès anticipé.
         </p>
 
         {/* Form */}
