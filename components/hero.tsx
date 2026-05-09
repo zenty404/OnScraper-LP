@@ -36,12 +36,14 @@ export function Hero() {
               <div className="hidden lg:block absolute right-[-175px] top-[-100px]">
                 <div className="relative">
                   {/* Badge box */}
-                  <div className="text-[#1D1D1E] font-medium bg-white border border-gray-200 py-[18px] px-[27px] rounded-[18px] shadow-md transform -rotate-6 transition-transform duration-100 hover:rotate-6 tracking-[-0.48px]">
-                    Créé par Shift Agency
+                  <div className="text-[#1D1D1E] font-semibold bg-white border border-gray-200 py-[20px] px-[32px] rounded-[22px] shadow-lg transform -rotate-6 transition-transform duration-100 hover:rotate-6 tracking-[-0.48px] flex items-center gap-3">
+                    <span>Créé par</span>
+                    <Image src="/shift_logo.svg" alt="Shift Agency logo" width={40} height={40} className="h-10 w-10" />
+                    <span>Shift Agency</span>
                   </div>
                   {/* Arrow */}
                   <svg
-                    className="absolute left-[-20px] top-[80px]"
+                    className="absolute left-[-20px] top-[88px]"
                     width="54"
                     height="77"
                     viewBox="0 0 54 77"
