@@ -56,7 +56,7 @@ export function DemoAnimation() {
                     {currentDemo.query}
                   </span>
                 </div>
-                <button className="search-button px-6 py-2 bg-[#092B7E] text-white rounded-lg font-medium text-sm hover:bg-[#0D3AA1] transition-all shadow-md">
+                <button className="search-button px-6 py-2 bg-[#092B7E] text-white rounded-lg font-medium text-sm hover:bg-[#0D3AA1] transition-all shadow-md cursor-pointer">
                   Rechercher
                 </button>
               </div>
@@ -265,7 +265,7 @@ export function DemoAnimation() {
                       <span>{prospect.phone}</span>
                     </div>
                   </div>
-                  <button className="px-3 py-1.5 bg-[#092B7E] text-white text-xs font-medium rounded-lg hover:bg-[#0D3AA1] transition-all">
+                  <button className="px-3 py-1.5 bg-[#092B7E] text-white text-xs font-medium rounded-lg hover:bg-[#0D3AA1] transition-all cursor-pointer">
                     Action
                   </button>
                 </div>
@@ -280,7 +280,7 @@ export function DemoAnimation() {
                 <p className="font-medium mb-1">Exporter la sélection</p>
                 <p className="text-xs text-blue-100">4 prospects sélectionnés</p>
               </div>
-              <button className="px-4 py-2 bg-white text-[#092B7E] rounded-lg text-sm font-medium hover:bg-blue-50 transition-all">
+              <button className="px-4 py-2 bg-white text-[#092B7E] rounded-lg text-sm font-medium hover:bg-blue-50 transition-all cursor-pointer">
                 CSV
               </button>
             </div>
@@ -294,7 +294,7 @@ export function DemoAnimation() {
           <button
             key={demo.id}
             onClick={() => setActiveDemo(index)}
-            className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+            className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-pointer ${
               activeDemo === index
                 ? "bg-[#092B7E] text-white shadow-md"
                 : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"

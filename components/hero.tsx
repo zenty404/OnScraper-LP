@@ -28,7 +28,7 @@ export function Hero() {
 
             {/* CTA avec badge */}
             <div className="relative flex items-center justify-center gap-8">
-              <button className="px-8 py-4 bg-[#092B7E] text-white rounded-full font-medium text-lg hover:bg-[#0D3AA1] transition-all duration-200">
+              <button className="px-8 py-4 bg-[#092B7E] text-white rounded-full font-medium text-lg hover:bg-[#0D3AA1] transition-all duration-200 cursor-pointer">
                 Rejoindre la waitlist
               </button>
 
