@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Search, MapPin, Phone, Star } from "lucide-react";
 
 const demos = [
@@ -23,10 +23,26 @@ const demos = [
 
 export function DemoAnimation() {
   const [activeDemo, setActiveDemo] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
   const currentDemo = demos[activeDemo];
 
+  // Auto-play: change demo every 7 seconds
+  useEffect(() => {
+    if (isHovered) return; // Pause when hovering
+
+    const interval = setInterval(() => {
+      setActiveDemo((prev) => (prev + 1) % demos.length);
+    }, 7000);
+
+    return () => clearInterval(interval);
+  }, [isHovered]);
+
   return (
-    <div className="w-full h-full bg-gradient-to-br from-gray-50 via-white to-blue-50/30 rounded-2xl p-6 md:p-8 relative">
+    <div
+      className="w-full h-full bg-gradient-to-br from-gray-50 via-white to-blue-50/30 rounded-2xl p-6 md:p-8 relative"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       {/* Démo Recherche */}
       {activeDemo === 0 && (
         <>
