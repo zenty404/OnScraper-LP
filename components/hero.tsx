@@ -11,13 +11,14 @@ export function Hero() {
       <ContainerScroll
         titleComponent={
           <div className="relative z-10">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900 mb-6">
-              Trouvez vos prospects
-              <br />
-              en quelques clics
+            <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold tracking-tight text-gray-900 mb-6">
+              Votre environnement de prospection
+              <br/>
+              réuni dans un seul outil.
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-              OnScraper by Shift automatise votre prospection via Google Maps.
+              OnScraper by Shift automatise votre prospection.
+              <br></br>
               Recherchez, enrichissez et gérez vos prospects qualifiés en un seul endroit.
             </p>
             <button className="group relative px-8 py-4 bg-[#092B7E] text-white rounded-full font-medium text-lg hover:bg-[#0D3AA1] transition-all duration-200 shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/40">

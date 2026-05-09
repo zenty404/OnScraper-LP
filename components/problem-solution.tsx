@@ -46,7 +46,7 @@ export function ProblemSolution() {
                 La solution
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
-                OnScraper automatise
+                OnScraper by Shift automatise
                 <br />
                 tout le processus
               </h3>
@@ -60,13 +60,13 @@ export function ProblemSolution() {
                 <p className="flex items-start gap-3">
                   <span className="text-[#092B7E] mt-1">✓</span>
                   <span>
-                    Enrichissement automatique : nom, téléphone, adresse, note
+                    Enrichissement automatique des données et traitement en un clic.
                   </span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-[#092B7E] mt-1">✓</span>
                   <span>
-                    Centralisez tout dans un CRM léger et intuitif
+                    Centralisez tout dans votre tableau de bord intuitif
                   </span>
                 </p>
                 <p className="flex items-start gap-3">

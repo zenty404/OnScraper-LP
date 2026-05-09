@@ -26,12 +26,12 @@ export function Features() {
                     <MapPin className="w-6 h-6 text-[#092B7E]" />
                   </div>
                   <p className="font-semibold text-lg text-gray-900">
-                    Recherche Google Maps
+                    Recherche de prospects.
                   </p>
                 </div>
                 <p className="text-gray-600 mt-3 max-w-sm text-sm">
                   Trouvez des prospects qualifiés en quelques secondes grâce à
-                  notre moteur de recherche connecté à Google Maps et Places.
+                  notre moteur de recherche connecté à une base de données de + de 100 millions de leads.
                 </p>
               </div>
             </CardHeader>
@@ -79,8 +79,11 @@ export function Features() {
                 <Database className="w-6 h-6 text-[#092B7E]" />
               </div>
             </div>
-            <p className="mx-auto mb-12 max-w-md text-balance text-left text-lg font-semibold sm:text-xl">
+            <p className="mx-auto max-w-md text-balance text-left text-lg font-semibold sm:text-xl">
               Enrichissement automatique des données
+            </p>
+            <p className="text-gray-600 mt-3 mb-4 max-w-sm text-sm">
+                  + vous utilisez l'outil, + il devient puissant et rapide.
             </p>
 
             <div className="flex justify-start gap-4">
@@ -102,8 +105,7 @@ export function Features() {
                 <p className="font-semibold text-lg text-gray-900">CRM intégré</p>
               </div>
               <p className="text-gray-600 mt-2 max-w-sm text-sm">
-                Gérez vos prospects avec un CRM léger : statuts, listes
-                personnalisées, export CSV.
+                Gérez vos prospects avec un Dashboard intuitif.
               </p>
             </CardHeader>
             <CardContent className="relative h-fit px-6 pb-6 md:px-12 md:pb-12">
