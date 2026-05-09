@@ -2,6 +2,7 @@
 
 import { Clock, X, Check, ArrowRight } from "lucide-react";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
+import { Highlighter } from "@/components/ui/highlighter";
 
 export function ProblemSolution() {
   return (
@@ -17,7 +18,7 @@ export function ProblemSolution() {
         <ScrollReveal>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-              Transformez votre prospection
+              <Highlighter color="#93C5FD" isView={true}>Transformez</Highlighter> votre prospection
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               De la prospection manuelle chronophage à l'automatisation intelligente

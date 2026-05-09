@@ -54,7 +54,7 @@ export function PainPoints() {
         <ScrollReveal>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-              On comprend vos défis
+              On comprend <Highlighter color="#93C5FD" isView={true}>vos défis</Highlighter>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               En tant que dirigeant d'agence, vous faites face à des défis quotidiens qui vont bien au-delà de la simple technique

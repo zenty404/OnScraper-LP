@@ -2,6 +2,7 @@
 
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { MapPin, Database, Users, Search, Phone, Star, TrendingUp } from "lucide-react";
+import { Highlighter } from "@/components/ui/highlighter";
 
 export function Features() {
   return (
@@ -10,7 +11,7 @@ export function Features() {
         {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
-            Tout ce dont vous avez besoin
+            <Highlighter color="#93C5FD" isView={true}>Tout ce dont vous avez besoin</Highlighter>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Une solution complète pour transformer votre prospection
