@@ -26,7 +26,7 @@ function BentoGrid({ items }: BentoGridProps) {
                     key={index}
                     className={cn(
                         "group relative p-6 rounded-2xl overflow-hidden transition-all duration-300",
-                        "border-2 border-gray-200 bg-white",
+                        "border-2 border-gray-200 bg-transparent",
                         item.colSpan === 2 ? "md:col-span-2" : "",
                         {
                             "shadow-xl -translate-y-1": item.hasPersistentHover,
@@ -47,7 +47,7 @@ function BentoGrid({ items }: BentoGridProps) {
                     <div className="relative flex flex-col space-y-4">
                         {/* Header with icon */}
                         <div className="flex items-start">
-                            <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#092B7E] to-[#0D3AA1] shadow-lg transition-transform duration-300 group-hover:scale-110">
+                            <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-blue-50 shadow-sm border border-blue-100">
                                 {item.icon}
                             </div>
                         </div>

@@ -10,28 +10,28 @@ export function PainPoints() {
     {
       title: "L'angoisse financière",
       description: "La peur de ne pas générer de revenus. Cette angoisse immédiate paralyse vos décisions et vous empêche de vous concentrer sur la croissance.",
-      icon: <DollarSign className="w-6 h-6 text-white" />,
+      icon: <DollarSign className="w-6 h-6 text-[#092B7E]" />,
       meta: "73%",
       status: "des Freelances et Agences concernées",
     },
     {
       title: "La peur de prospecter",
       description: "Peur de déranger, syndrome de l'imposteur, peur du refus. Ces blocages psychologiques vous empêchent d'atteindre vos objectifs commerciaux.",
-      icon: <UserX className="w-6 h-6 text-white" />,
+      icon: <UserX className="w-6 h-6 text-[#092B7E]" />,
       meta: "68%",
       status: "évitent la prospection",
     },
     {
       title: "La frustration du manuel",
       description: "Tâches répétitives et chronophages de recherche de clients. Votre temps précieux est gaspillé dans des actions sans valeur ajoutée.",
-      icon: <Clock className="w-6 h-6 text-white" />,
+      icon: <Clock className="w-6 h-6 text-[#092B7E]" />,
       meta: "20h",
       status: "de perdue par semaine en moyenne",
     },
     {
       title: "La crainte d'investir",
       description: "Peur de dépenser dans des outils sans garantie de résultats. Vous hésitez à investir par peur de perdre votre argent.",
-      icon: <AlertTriangle className="w-6 h-6 text-white" />,
+      icon: <AlertTriangle className="w-6 h-6 text-[#092B7E]" />,
       meta: "82%",
       status: "hésitent à s'équiper",
     },
@@ -69,7 +69,7 @@ export function PainPoints() {
         <ScrollReveal delay={0.2}>
           <div className="text-center mt-16">
             <div className="inline-block relative w-full max-w-6xl">
-              <div className="relative bg-white rounded-3xl p-12 md:p-16 border border-gray-200">
+              <div className="relative bg-transparent rounded-3xl p-12 md:p-16 border border-gray-200">
                 <h3 className="text-3xl md:text-4xl font-bold text-[#092B7E] mb-6">
                   Et si vous pouviez enfin vous concentrer sur ce qui<Highlighter action="underline" color="#93C5FD" >compte vraiment ?</Highlighter>
                 </h3>
