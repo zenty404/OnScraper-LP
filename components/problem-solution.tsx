@@ -131,9 +131,9 @@ export function ProblemSolution() {
         {/* CTA with arrow */}
         <ScrollReveal delay={0.3}>
           <div className="mt-16 text-center">
-            <button className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#092B7E] to-[#0D3AA1] text-white rounded-xl font-semibold text-lg shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/40 hover:scale-105 transition-all duration-300 cursor-pointer">
+            <button className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#092B7E] to-[#0D3AA1] text-white rounded-xl font-semibold text-lg shadow-lg shadow-blue-500/25 transition-all duration-300 cursor-pointer">
               Gagnez jusqu'à 20 heures par semaine
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
           </div>
         </ScrollReveal>
