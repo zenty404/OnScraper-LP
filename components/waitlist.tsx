@@ -84,7 +84,7 @@ export function Waitlist() {
           <button
             type="submit"
             disabled={submitted}
-            className={`w-full px-8 py-4 rounded-xl font-medium text-white text-lg transition-all duration-200 ${
+            className={`cursor-pointer w-full px-8 py-4 rounded-xl font-medium text-white text-lg transition-all duration-200 ${
               submitted
                 ? "bg-green-500"
                 : "bg-[#092B7E] hover:bg-[#0D3AA1]"
