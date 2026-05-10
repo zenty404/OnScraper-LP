@@ -15,11 +15,10 @@ export function Hero() {
         titleComponent={
           <div className="relative z-10">
             <ScrollReveal delay={0.1}>
-              <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold tracking-tight text-gray-900 mb-6">
-                Votre environnement de prospection
-                <br/>
+              <h1 className="text-4xl md:text-6xl lg:text-6xxl font-bold tracking-tight text-gray-900 mb-6">
+                Votre environnement de prospection réuni dans
                 <Highlighter color="#93C5FD" isView={true}>
-                  réuni dans un seul outil.
+                  un seul outil.
                 </Highlighter>
               </h1>
             </ScrollReveal>

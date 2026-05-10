@@ -19,7 +19,7 @@ export function ProblemSolution() {
           <div className="text-center mb-16">
             <div className="overflow-hidden px-4">
               <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-                Transformez votre <Highlighter color="#93C5FD" isView={true} padding={0}>prospection</Highlighter>
+                Transformez votre <Highlighter action="underline" color="#93C5FD" padding={0}>prospection</Highlighter>
               </h2>
             </div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
