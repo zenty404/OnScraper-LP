@@ -27,8 +27,6 @@ function BentoGrid({ items }: BentoGridProps) {
                     className={cn(
                         "group relative p-6 rounded-2xl overflow-hidden transition-all duration-300",
                         "border-2 border-gray-200 bg-white",
-                        "hover:shadow-xl hover:shadow-[#092B7E]/5",
-                        "hover:-translate-y-1 will-change-transform",
                         item.colSpan === 2 ? "md:col-span-2" : "",
                         {
                             "shadow-xl -translate-y-1": item.hasPersistentHover,

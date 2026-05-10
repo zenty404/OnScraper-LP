@@ -74,7 +74,7 @@ export function PainPoints() {
           <div className="text-center mt-16">
             <div className="inline-block relative w-full max-w-5xl">
               <div className="absolute inset-0 bg-[#092B7E]/10 blur-xl rounded-full" />
-              <div className="relative bg-white rounded-3xl p-12 md:p-16 shadow-2xl shadow-[#092B7E]/20 border border-gray-200">
+              <div className="relative bg-white rounded-3xl p-12 md:p-16 border border-gray-200">
                 <h3 className="text-3xl md:text-4xl font-bold text-[#092B7E] mb-6">
                   Et si vous pouviez enfin vous concentrer sur ce qui<Highlighter action="underline" color="#93C5FD" >compte vraiment ?</Highlighter>
                 </h3>
