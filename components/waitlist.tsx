@@ -34,19 +34,19 @@ export function Waitlist() {
     <section id="waitlist" className="bg-white py-16 md:py-32">
       <div className="mx-auto max-w-4xl px-6">
         {/* Card container with border */}
-        <div className="border-2 border-gray-200 rounded-3xl p-8 md:p-12 shadow-lg bg-gradient-to-b from-white to-gray-50/30">
+        <div className="border-2 border-gray-200 rounded-3xl p-8 md:p-12 bg-gradient-to-b from-white to-gray-50/30">
           {/* Avatars row */}
           <div className="flex items-center justify-center mb-12">
           <div className="flex items-center -space-x-3">
             {avatars.map((avatar, i) => (
               <div
                 key={i}
-                className={`flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br ${avatar.gradient} border-2 border-white shadow-lg text-white font-medium text-sm`}
+                className={`flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br ${avatar.gradient} border-2 border-white text-white font-medium text-sm`}
               >
                 {avatar.initials}
               </div>
             ))}
-            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-2 border-blue-200 shadow-lg text-gray-900 font-bold text-sm ml-2">
+            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-2 border-blue-200 text-gray-900 font-bold text-sm ml-2">
               +50
             </div>
           </div>

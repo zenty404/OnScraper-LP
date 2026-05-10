@@ -33,7 +33,7 @@ export function ProblemSolution() {
           <ScrollReveal delay={0.1} direction="left">
             <div className="group relative h-full">
               <div className="absolute inset-0 bg-gradient-to-br from-gray-500/10 to-gray-400/5 rounded-2xl" />
-              <div className="relative h-full flex flex-col bg-white/80 backdrop-blur-sm border-2 border-gray-200 rounded-2xl p-8 shadow-lg">
+              <div className="relative h-full flex flex-col bg-white/80 backdrop-blur-sm border-2 border-gray-200 rounded-2xl p-8">
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 border border-gray-200 rounded-full text-sm font-semibold text-gray-700 mb-6">
                 <X className="w-4 h-4" />
@@ -82,7 +82,7 @@ export function ProblemSolution() {
           <ScrollReveal delay={0.2} direction="right">
             <div className="group relative h-full">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-cyan-500/5 rounded-2xl" />
-              <div className="relative h-full flex flex-col bg-white/80 backdrop-blur-sm border-2 border-blue-200/50 rounded-2xl p-8 shadow-lg">
+              <div className="relative h-full flex flex-col bg-white/80 backdrop-blur-sm border-2 border-blue-200/50 rounded-2xl p-8">
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-200 rounded-full text-sm font-semibold text-[#0D3AA1] mb-6">
                 <Check className="w-4 h-4" />
