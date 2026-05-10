@@ -9,10 +9,9 @@ export function PainPoints() {
   const painItems: BentoItem[] = [
     {
       title: "L'angoisse financière",
-      description: "La peur de ne pas générer de revenus ce mois-ci. Cette angoisse immédiate paralyse vos décisions et vous empêche de vous concentrer sur la croissance.",
+      description: "La peur de ne pas générer de revenus. Cette angoisse immédiate paralyse vos décisions et vous empêche de vous concentrer sur la croissance.",
       icon: <DollarSign className="w-6 h-6 text-white" />,
       meta: "73%",
-      tags: ["Trésorerie", "Stress"],
       status: "des Freelances et Agences concernées",
     },
     {
@@ -20,7 +19,6 @@ export function PainPoints() {
       description: "Peur de déranger, syndrome de l'imposteur, peur du refus. Ces blocages psychologiques vous empêchent d'atteindre vos objectifs commerciaux.",
       icon: <UserX className="w-6 h-6 text-white" />,
       meta: "68%",
-      tags: ["Blocage", "Psychologique"],
       status: "évitent la prospection",
     },
     {
@@ -28,7 +26,6 @@ export function PainPoints() {
       description: "Tâches répétitives et chronophages de recherche de clients. Votre temps précieux est gaspillé dans des actions sans valeur ajoutée.",
       icon: <Clock className="w-6 h-6 text-white" />,
       meta: "20h",
-      tags: ["Temps perdu", "Répétitif"],
       status: "de perdue par semaine en moyenne",
     },
     {
@@ -36,7 +33,6 @@ export function PainPoints() {
       description: "Peur de dépenser dans des outils sans garantie de résultats. Vous hésitez à investir par peur de perdre votre argent.",
       icon: <AlertTriangle className="w-6 h-6 text-white" />,
       meta: "82%",
-      tags: ["Investissement", "ROI"],
       status: "hésitent à s'équiper",
     },
   ];
