@@ -6,7 +6,7 @@ import { Highlighter } from "@/components/ui/highlighter";
 
 export function Features() {
   return (
-    <section className="bg-gray-50 py-16 md:py-32">
+    <section className="bg-gray-50 py-6 md:py-8">
       <div className="mx-auto max-w-5xl px-6">
         {/* Section Title */}
         <div className="text-center mb-16">
